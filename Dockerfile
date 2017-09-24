@@ -14,3 +14,6 @@ RUN gem install cocoapods
 # (user `nobody` does not have enough permissions)
 USER node
 RUN pod setup
+
+# Restore default user back to `root`
+USER root
